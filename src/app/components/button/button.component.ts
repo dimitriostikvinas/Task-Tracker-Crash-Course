@@ -7,8 +7,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ButtonComponent {
   // Variable text, color and emit button click event
-  @Input() text!: string;
-  @Input() color!: string;
+  @Input() text?: string;
+  @Input() color?: string;
   @Output() btnClick = new EventEmitter();
 
   onClick() {
